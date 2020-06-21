@@ -14,9 +14,7 @@ ttask, umax, new_users = inputs[0], inputs[1], inputs[2:]
 new_users += [0]*ttask   #complete new_users list
 
 def add_user():
-    '''
-    Assign user to server and initiates its countdown
-    '''
+    # Assign user to server and initiates its countdown
     global countdown
     # check available servers
     priority = [max(i) if len(i) < umax else 0 for i in countdown]
